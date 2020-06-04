@@ -1,11 +1,11 @@
 # Experimental artifacts
 
-This is repository contains artifacts accompanying our paper "Efficient Binary-Level Coverage Analysis"
+This repository contains artifacts accompanying our paper "Efficient Binary-Level Coverage Analysis"
 which is accepted to ESEC/FSE'20. It is organized as follows:
 
-  - `dataset.tar.gz`. This package contains experimental data in csv format.
-
   - `sample-binaries`. This folder contains sample binaries patched with our tool.
+
+  - `dataset.tar.gz`. This package contains experimental data in csv format.
 
   - `figures`. This folder contains a python script used to generate the figures
   of our paper. It assumes the dataset was first extracted to folder `dataset`
