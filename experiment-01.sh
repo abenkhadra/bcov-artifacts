@@ -37,10 +37,13 @@ echo "reporting coverage data of the previous run to file: ${PWD}/report.out"
 coverage_file=$(find . -type f -iname "*.bcov")
 if [[ -f $coverage_file ]]; then
   echo "reporting coverage to file report.out"
-  $bcov_bin_path -m report -p any -i ./perl -d perl.any.*.bcov > report.out
+  $bcov_bin_path -m report -p any -i ./perl -d $coverage_file > report.out
 else
   echo "weird! no coverage file found!"
+  exit 1
 fi
 
 # Clean up to repeat the experiment
- find . -type f -iname "*.bcov" -exec rm {} +
+find . -type f -iname "*.bcov" -exec rm {} +
+echo "experiment completed successfully"
+
