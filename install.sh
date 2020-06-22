@@ -3,7 +3,7 @@
 
 function setup_build() {
   export HOME_DIR="$PWD"
-  export PACKAGE_HOME_DIR="$PWD/packages"
+  export PACKAGE_HOME_DIR="$HOME_DIR/packages"
   export INSTALL_PREFIX_DIR="$HOME_DIR/local"
 
   if [[ -d $INSTALL_PREFIX_DIR ]]; then
