@@ -14,3 +14,5 @@ which is accepted to ESEC/FSE'20. It is organized as follows:
 
   - `experiment-01.sh`. This script patches our sample binaries and shows how coverage
   data can be collected. It assumes that `bcov` was installed using the previous script.
+
+  - `Dockerfile`. A file to build and install the artifacts in a docker image.
